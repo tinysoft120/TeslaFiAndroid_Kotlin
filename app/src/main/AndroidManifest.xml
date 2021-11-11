@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.leveugle.teslatokens">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:isSplitRequired="true"
+        android:theme="@style/Theme.AuthForTeslaFi">
+
+        <activity android:label="@string/app_name"
+            android:name="net.leveugle.teslatokens.ui.login.LoginActivity"/>
+        <activity android:label="@string/app_name"
+            android:name="net.leveugle.teslatokens.ui.login.LoginViewActivity"/>
+        <activity android:label="@string/app_name"
+            android:name="net.leveugle.teslatokens.ui.mainactivity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
